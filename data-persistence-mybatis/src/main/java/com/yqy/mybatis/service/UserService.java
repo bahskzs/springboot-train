@@ -3,6 +3,8 @@ package com.yqy.mybatis.service;
 import com.yqy.mybatis.dao.UserDao;
 import com.yqy.mybatis.domain.User;
 
+import com.yqy.mybatis.dto.UserDTO;
+import com.yqy.mybatis.util.CopyUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -23,8 +25,9 @@ public class UserService {
         return  user;
     }
 
-    public List<User> list() {
-        List<User> users = userDao.selectByExample(null);
+    public List<UserDTO> list() {
+        List<User> userList = userDao.selectByExample(null);
+        List<UserDTO> users = CopyUtil.copyList(userList ,UserDTO.class);
         return users;
     }
 }
