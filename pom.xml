@@ -6,6 +6,7 @@
     <modules>
         <module>data-persistence-mybatis</module>
         <module>data-persistence-jpa</module>
+        <module>data-persistence-tkmapper</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
