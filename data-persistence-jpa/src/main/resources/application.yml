@@ -1,0 +1,14 @@
+server:
+  port: 9522
+  servlet:
+    context-path: /jpa
+demo: demo
+spring:
+  datasource:
+    url: jdbc:mysql://47.114.63.55:3306/db_wiki?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: QAZwsx123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
