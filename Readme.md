@@ -4,3 +4,6 @@
 
 ### 1.data-persistence-jpa 
 springboot + jpa + jpa buddy快速生成domain + dao
+
+### 2.data-persistence-mybatis
+springboot + mybatis + free mybatis plugin 快速生成domain + dao
