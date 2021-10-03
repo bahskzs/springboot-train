@@ -10,3 +10,9 @@ springboot + mybatis + free mybatis plugin 快速生成domain + dao
 
 ### 3.data-persistence-tkmapper
 不用插件而是使用通用mapper框架
+
+
+### 4.springboot 整合 redis
+
+pom.xml
+application.yml
