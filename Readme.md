@@ -16,3 +16,10 @@ springboot + mybatis + free mybatis plugin 快速生成domain + dao
 
 pom.xml
 application.yml
+
+
+### 5.自制maven archetype
+1.mvn archetype:create-from-project     //生成archetype项目文件
+2.cd target/generated-sources/archetype/   //切换到archetype项目跟目录
+3.mvn install   //对archetype项目打包安装
+4.mvn archetype:generate -DarchetypeCatalog=local  //利用local本地提供的archetype创建项目
